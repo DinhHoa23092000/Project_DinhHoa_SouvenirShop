@@ -863,12 +863,12 @@ $_SESSION['type']="";
                                                     and o.id=".$resultOrder[$i][0];
                                                     $resultOd=$db->query($detailOrder)->fetch_all();
                                                 /*-------------------------------------------------------------------------------*/
-                                                    for ($i=0; $i<count($resultOd);$i++) {
+                                                    for ($k=0; $k<count($resultOd);$k++) {
                                                         echo '<tr>';
-                                                        echo '<td style="text-align: center;">'.$resultOd[$i][0].'</td>';
-                                                        echo '<td style="text-align: center;">'.$resultOd[$i][1].'</td>';
-                                                        echo '<td style="text-align: center;">'.$resultOd[$i][2].'</td>';
-                                                        echo '<td style="text-align: center;">'.($resultOd[$i][1]*$resultOd[$i][2]).'</td>';
+                                                        echo '<td style="text-align: center;">'.$resultOd[$k][0].'</td>';
+                                                        echo '<td style="text-align: center;">'.$resultOd[$k][1].'</td>';
+                                                        echo '<td style="text-align: center;">'.$resultOd[$k][2].'</td>';
+                                                        echo '<td style="text-align: center;">'.($resultOd[$k][1]*$resultOd[$k][2]).'</td>';
                                                         echo '</tr>';
                                                     }
                                                 ?>

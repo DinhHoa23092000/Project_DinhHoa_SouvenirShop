@@ -97,7 +97,7 @@ from Product as p, orders as o, order_detail as od, customer as c
 where o.id=od.id_ord
 and od.id_pro=p.id
 and o.id_cus=c.id
-and o.id=1;
+and o.id=2;
 
 select orders.id, orders.date_order, customer.name, orders.total_price
 from orders, customer
